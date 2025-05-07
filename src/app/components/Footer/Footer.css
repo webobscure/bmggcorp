@@ -1,0 +1,122 @@
+/* Общие стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fafafa;
+}
+
+.border {
+  border-bottom: 1px solid rgba(220, 228, 241, 0.5);
+}
+
+/* Контейнер */
+.footer-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Контакты */
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Левая часть подвала */
+.footer-left {
+  width: 50%;
+}
+
+/* Правая часть подвала */
+.footer-right {
+  width: 50%;
+  align-items: self-end;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Скачиваемые файлы */
+.contract {
+  margin: 20px 0;
+}
+
+.file-download {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.file-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/* Подвал */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer p {
+  margin: 5px;
+  font-family: Geometria, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+}
+
+.footer p:first-child {
+  font-weight: 600;
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-right {
+    align-items: center;
+  }
+
+  .file-download {
+    justify-content: center;
+  }
+}
