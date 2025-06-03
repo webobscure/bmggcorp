@@ -2,12 +2,13 @@ import React, { forwardRef } from 'react'
 import './StorageInfo.css'
 import { amazon, ebay, indexInfoBanner, shopify } from './assets'
 import { useLanguage } from './context/LanguageContext.jsx'
+import Image from 'next/image'
 
 const iconMap = {
-  '[amazon]': <img src={amazon} alt="Amazon" className="third-company__img" />,
-  '[ebay]': <img src={ebay} alt="eBay" className="third-company__img" />,
+  '[amazon]': <Image src={amazon} alt="Amazon" width={79} height={24} className="third-company__Image" />,
+  '[ebay]': <Image src={ebay} width={50} height={24} alt="eBay" className="third-company__Image" />,
   '[shopify]': (
-    <img src={shopify} alt="Shopify" className="third-company__img" />
+    <Image src={shopify} width={87} height={24} alt="Shopify" className="third-company__Image" />
   ),
 }
 
@@ -34,7 +35,7 @@ const StorageInfo = forwardRef((props, ref) => {
 
         <div className="storage-info__content">
           <div className="storage-left">
-            <img src={indexInfoBanner} alt="Storage Banner" />
+            <Image src={indexInfoBanner} alt="Storage Banner" />
           </div>
           <div className="storage-right">
             <ul className="storage-features">

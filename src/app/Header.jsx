@@ -8,6 +8,7 @@ import { useLanguage } from "./context/LanguageContext.jsx";
 import LanguageSwitcher from "./components/LanguageSwitcher.jsx";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 const Header = ({
   scrollToWarehouse,
   scrollToServices,
@@ -55,13 +56,13 @@ const Header = ({
   return (
     <header>
       <div className="announcement-bar">
-        <h6>{translations.header_announcement_text}</h6>
+        <h6>{translations?.header_announcement_text}</h6>
       </div>
       <div className="border-block">
         <div className="container">
           <div className="header-top">
             <Link href="/">
-              <img src={logo} alt="Logo" className="logo" />
+              <Image src={logo} width={131} height={50} alt="Logo" className="logo" />
             </Link>
 
             <div className="contact-block">
@@ -93,36 +94,36 @@ const Header = ({
               <button
                 onClick={() => handleScrollAction("services", scrollToServices)}
               >
-                {translations.header_services}
+                {translations?.header_services}
               </button>
               <button
                 onClick={() =>
                   handleScrollAction("marketplace", scrollToMarketplace)
                 }
               >
-                {translations.header_marketplace}
+                {translations?.header_marketplace}
               </button>
               <button
                 onClick={() =>
                   handleScrollAction("fulfillment", scrollToFullfilment)
                 }
               >
-                {translations.header_fulfillment}
+                {translations?.header_fulfillment}
               </button>
               <button
                 className="faq_section"
                 onClick={() => handleScrollAction("faq", scrollToFaq)}
               >
-                {translations.header_faq}
+                {translations?.header_faq}
               </button>
-                <Link href="/contacts" className="nav-button">
-                  {translations.header_contacts || "Contacts"}
-                </Link>
+                <a href="/contacts" className="nav-button">
+                  {translations?.header_contacts || "Contacts"}
+                </a>
             </nav>
 
             <div className="extra-buttons">
                 <Link href="/calculator" className="outline-btn">
-                  {translations.calculator || "Calculator"}
+                  {translations?.calculator || "Calculator"}
                 </Link>
             </div>
           </div>
@@ -144,7 +145,7 @@ const Header = ({
             <LanguageSwitcher />
 
             <button ref={buttonRef} className="outline-btn">
-              {translations.header_request_quote_btn}
+              {translations?.header_request_quote_btn}
             </button>
             <a href="tel:+491727991658" target="_blank" rel="noopener noreferrer" className="icon-btn">
               <svg
@@ -187,37 +188,37 @@ const Header = ({
           <button
             onClick={() => handleScrollAction("services", scrollToServices)}
           >
-            {translations.header_services}
+            {translations?.header_services}
           </button>
           <button
             onClick={() =>
               handleScrollAction("marketplace", scrollToMarketplace)
             }
           >
-            {translations.header_marketplace}
+            {translations?.header_marketplace}
           </button>
           <button
             onClick={() =>
               handleScrollAction("fulfillment", scrollToFullfilment)
             }
           >
-            {translations.header_fulfillment}
+            {translations?.header_fulfillment}
           </button>
           <button onClick={() => handleScrollAction("faq", scrollToFaq)}>
-            {translations.header_faq}
+            {translations?.header_faq}
           </button>
           <button>
-            <Link
+            <a
               to="/contacts"
               className="mobile-menu-link"
               onClick={() => setMenuOpen(false)}
             >
-              {translations.header_contacts || "Contacts"}
-            </Link>
+              {translations?.header_contacts || "Contacts"}
+            </a>
           </button>
           <button className="outline-btn">
             <Link href="/calculator">
-              {translations.calculator || "Calculator"}
+              {translations?.calculator || "Calculator"}
             </Link>
           </button>
         </div>

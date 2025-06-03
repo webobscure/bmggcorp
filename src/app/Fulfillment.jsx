@@ -5,6 +5,7 @@ import order from './assets/Order.webp'
 import shipping from './assets/Shipping.webp'
 import returns from './assets/Returns.webp'
 import { useLanguage } from './context/LanguageContext.jsx'
+import Image from 'next/image'
 
 const Fulfillment = forwardRef((props, ref) => {
   const { translations } = useLanguage()
@@ -15,7 +16,7 @@ const Fulfillment = forwardRef((props, ref) => {
       <div className="services-container">
         <div className="service">
           <div className="service-header">
-            <img src={receiving} alt="Receiving" className="service-icon" />
+            <Image src={receiving} alt="Receiving" className="service-icon" />
             <h3>{translations.fulfillment_receiving_title}</h3>
           </div>
           <div className="service-content">
@@ -25,7 +26,7 @@ const Fulfillment = forwardRef((props, ref) => {
 
         <div className="service">
           <div className="service-header">
-            <img src={order} alt="Order" className="service-icon" />
+            <Image src={order} alt="Order" className="service-icon" />
             <h3>{translations.fulfillment_order_title}</h3>
           </div>
           <div className="service-content">
@@ -35,7 +36,7 @@ const Fulfillment = forwardRef((props, ref) => {
 
         <div className="service">
           <div className="service-header">
-            <img src={shipping} alt="Shipping" className="service-icon" />
+            <Image src={shipping} alt="Shipping" className="service-icon" />
             <h3>{translations.fulfillment_shipping_title}</h3>
           </div>
           <div className="service-content">
@@ -45,7 +46,7 @@ const Fulfillment = forwardRef((props, ref) => {
 
         <div className="service">
           <div className="service-header">
-            <img src={returns} alt="Returns" className="service-icon" />
+            <Image src={returns} alt="Returns" className="service-icon" />
             <h3>{translations.fulfillment_returns_title}</h3>
           </div>
           <div className="service-content">

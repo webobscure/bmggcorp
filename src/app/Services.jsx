@@ -4,6 +4,7 @@ import storageIcon from './assets/storage_solutions.webp'
 import fulfillmentIcon from './assets/fulfillment_services.webp'
 import digitalIcon from './assets/digital_solutions.webp'
 import { useLanguage } from './context/LanguageContext.jsx'
+import Image from 'next/image'
 
 const Services = forwardRef((props, ref) => {
   const { translations } = useLanguage()
@@ -13,7 +14,7 @@ const Services = forwardRef((props, ref) => {
       <h1>{translations.services_title}</h1>
       <div className="services-container">
         <div className="service-item">
-          <img
+          <Image
             src={storageIcon}
             alt="Storage Solutions"
             className="service-icon"
@@ -25,7 +26,7 @@ const Services = forwardRef((props, ref) => {
         </div>
 
         <div className="service-item">
-          <img
+          <Image
             src={fulfillmentIcon}
             alt="Fulfillment Services"
             className="service-icon"
@@ -37,7 +38,7 @@ const Services = forwardRef((props, ref) => {
         </div>
 
         <div className="service-item">
-          <img
+          <Image
             src={digitalIcon}
             alt="Digital Solutions"
             className="service-icon"

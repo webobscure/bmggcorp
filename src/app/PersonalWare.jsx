@@ -1,6 +1,7 @@
 import React from 'react'
 import { botStash, topStash } from './assets'
 import './PersonalWare.css'
+import Image from 'next/image'
 export default function PersonalWare() {
   return (
     <section className="storage-types">
@@ -11,7 +12,7 @@ export default function PersonalWare() {
 
           <div className="columns-wrapper">
             <div className="storage-wrapper-left">
-              <img src={topStash} />
+              <Image src={topStash} />
               <div className="storage-column">
               <h2 className="column-title">For Individuals</h2>
                 <div className="storage-list">
@@ -42,7 +43,7 @@ export default function PersonalWare() {
                   <p className="storage-item">Fabrics</p>
                 </div>
               </div>
-              <img src={botStash} />
+              <Image src={botStash} />
             </div>
           </div>
 

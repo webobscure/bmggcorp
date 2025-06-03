@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import './HeroSection.css'
 import forkliftImage from './assets/truck.webp'
 import { useLanguage } from './context/LanguageContext.jsx'
+import Image from 'next/image'
 
 const HeroSection = () => {
   const { translations } = useLanguage()
@@ -43,7 +44,7 @@ const HeroSection = () => {
         <div className="indicator"> </div>
       </div>
       <div className="hero-image">
-        <img src={forkliftImage} alt="Gabelstapler mit Ware" />
+        <Image src={forkliftImage} alt="Gabelstapler mit Ware" />
       </div>
     </section>
   )

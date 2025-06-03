@@ -4,6 +4,7 @@ import warehouse1 from './assets/warehouse_1.webp'
 import warehouse2 from './assets/warehouse_2.webp'
 import warehouse3 from './assets/warehouse_3.webp'
 import { useLanguage } from './context/LanguageContext.jsx'
+import Image from 'next/image'
 
 const WarehouseInfo = forwardRef((props, ref) => {
   const buttonRef = useRef(null)
@@ -148,9 +149,9 @@ const WarehouseInfo = forwardRef((props, ref) => {
           </div>
 
           <div className="grid-images">
-            <img className="grid-image" src={warehouse1} alt="" />
-            <img className="grid-image" src={warehouse2} alt="" />
-            <img className="grid-image" src={warehouse3} alt="" />
+            <Image className="grid-image" src={warehouse1} alt="" />
+            <Image className="grid-image" src={warehouse2} alt="" />
+            <Image className="grid-image" src={warehouse3} alt="" />
           </div>
         </div>
 

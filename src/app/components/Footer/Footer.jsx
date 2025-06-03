@@ -1,8 +1,11 @@
+"use client"
+
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { useLanguage } from '../../context/LanguageContext'
 import docIcon from '../../assets/doc.svg'
 import './Footer.css'
+import Image from 'next/image'
 
 const Footer = ({
   scrollToWarehouse,
@@ -52,7 +55,7 @@ const Footer = ({
           <div className="footer-left">
             <section className="contract">
               <a href="/Impressum_BMGG.docx" download className="file-download">
-                <img src={docIcon} alt="doc" className="file-icon" />
+                <Image src={docIcon} alt="doc" className="file-icon" />
                 Impressum
               </a>
               <a
@@ -60,7 +63,7 @@ const Footer = ({
                 download
                 className="file-download"
               >
-                <img src={docIcon} alt="doc" className="file-icon" />
+                <Image src={docIcon} alt="doc" className="file-icon" />
                 Datenschutz & AGB
               </a>
               <a
@@ -68,7 +71,7 @@ const Footer = ({
                 download
                 className="file-download"
               >
-                <img src={docIcon} alt="doc" className="file-icon" />
+                <Image src={docIcon} alt="doc" className="file-icon" />
                 Preise für Fulfillment-Dienstleistungen
               </a>
             </section>
