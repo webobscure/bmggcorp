@@ -37,8 +37,8 @@ const ContactsPage = () => {
         <a href="mailto:order@bmggcorp.com" class="contact-info">
           order@bmggcorp.com
         </a>{' '}
-        <a href="tel:+491727991658" class="contact-info">
-          (+49) 172-799-1658
+        <a href="tel:+491727122309" class="contact-info">
+          (+49) 172-712-2309
         </a>
         <div className="contacts_warehouse-map">
           <iframe

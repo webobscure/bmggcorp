@@ -70,8 +70,8 @@ const Header = ({
                 <a href="mailto:order@bmggcorp.com" className="email">
                   order@bmggcorp.com
                 </a>
-                <a href="tel:+491727991658" className="phone">
-                  (+49) 172-799-1658
+                <a href="tel:+491727122309" className="phone">
+                  (+49) 172-712-2309
                 </a>
               </div>
             </div>
@@ -147,7 +147,7 @@ const Header = ({
             <button ref={buttonRef} className="outline-btn">
               {translations?.header_request_quote_btn}
             </button>
-            <a href="tel:+491727991658" target="_blank" rel="noopener noreferrer" className="icon-btn">
+            <a href="tel:+491727122309" target="_blank" rel="noopener noreferrer" className="icon-btn">
               <svg
                 fill="none"
                 height="16"

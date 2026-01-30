@@ -79,8 +79,8 @@ const Footer = ({
 
           <div className="footer-right">
             <div className="contact">
-              <a href="tel:+494029996807" className="phone">
-              (+49) 172-799-1658
+              <a href="tel:+491727122309" className="phone">
+              (+49) 172-712-2309
               </a>
             </div>
           </div>
